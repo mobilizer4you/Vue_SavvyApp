@@ -39,6 +39,9 @@
                     <label for="password2">Password</label>
                     <input v-model.trim="signupForm.password" type="password" placeholder="min 6 characters" id="password2" />
 
+                    <label for="password2">Confrim</label>
+                    <input v-model.trim="signupForm.confirm" type="confirm" placeholder="min 6 characters" id="confirm" />
+
                     <button @click="signup" class="button">Sign Up</button>
 
                     <div class="extras">
@@ -64,7 +67,8 @@
                     name: '',
                     title: '',
                     email: '',
-                    password: ''
+                    password: '',
+                    confirm: ''
                 }
             }
         },
