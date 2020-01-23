@@ -102,7 +102,8 @@
                     // create user obj
                     fb.usersCollection.doc(user.uid).set({
                         name: this.signupForm.name,
-                        title: this.signupForm.title
+                        title: this.signupForm.title,
+                        password: this.signupForm.password
                     }).then(() => {
                         this.$store.dispatch('fetchUserProfile')
                         this.$router.push('/dashboard')
